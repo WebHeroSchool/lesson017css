@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+ 
+}
+.burger {
+  display: none;
+}
+@media (max-width: 480px) {
+  .burger {
+   display: block; 
+   position: relative;
+   width: 25px;
+   height: 20px;
+  } 
+}
+.burger:before,
+.burger:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+.burger:before {
+  top: 0;
+}
+.burger:after {
+  bottom: 0;
+}
+span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  top: 8px;
+}
+.wrap__nav {
+  margin: 0;
+  display: flex;
+  height: 40px;
+  background-color: #3cc;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+ @media (max-width: 480px) {
+   .wrap__nav {
+     display: none;
+   }
+ }
+.nav__link {
+  padding: 10px 10px 10px;
+  text-decoration:none;
+  color: #fff;
+  justify-content: flex-start;
+}
+
+.section {
+  margin-top: 60px;
+}
+p { 
+  margin-left: 10px;
+  font-size: 28px;
+  text-indent: 10px;
+}
+
+@media (min-width: 100px)
+ and (max-width: 319px) {
+  p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 320px)
+ and (max-width: 479px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 480px)
+ and (max-width: 767px) {
+  p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px)
+ and (max-width: 1279px) {
+  p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1280px)
+ and (max-width: 2048px) {
+  p {
+    font-size: 28px;
+  }
+}
